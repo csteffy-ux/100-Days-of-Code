@@ -1,0 +1,15 @@
+# Band Name Generator
+# 100 Days of Code
+# Cody Steffy
+# Day 1 - 8/15/23
+
+
+# Welcome user to the program.
+print("Hello, welcome to the band name generator!\n")
+
+# Request user input for city and pet name to produce a band name.
+city_name = input("What city are you from? ")
+pet_name = input("What is your pet's name? ")
+
+# Combine the city and pet name then output the band name.
+print("Your band name is ", city_name + " " + pet_name)
