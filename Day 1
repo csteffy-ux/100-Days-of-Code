@@ -5,7 +5,7 @@
 
 
 # Welcome user to the program.
-print("Hello, welcome to the band name generator!\n")
+print("Hello, welcome to the band name generator!")
 
 # Request user input for city and pet name to produce a band name.
 city_name = input("What city are you from? ")
