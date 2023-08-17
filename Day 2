@@ -1,0 +1,28 @@
+# This is a basic tip calculator. The bill total is given, tip amount is applied, the bill is split, then the total for each person is produced.
+# Tip Calculator
+# 100 Days of Code
+# Cody Steffy
+# Day 2 - 8/16/23
+
+
+# Welcome user to the program.
+print("Welcome to the tip calculator!")
+
+# Get user input for the bill total.
+bill_total = float(input("What was the total bill? "))
+
+# Get user input for the tip percentage they prefer to leave.
+tip_percent = int(input("What percent would you like to leave as a tip? 10, 15,or 20 "))
+
+# Get user input for how many ways the bill will be split.
+num_split = int(input("How many ways will this bill be split? "))
+
+# Calculate tip amount on the bill.
+tip_amount = (bill_total * (tip_percent/100))
+# Calculate what the bill will be with tip added.
+bill_tipped = bill_total + tip_amount
+#Calculate the bill total for each person after the split.
+bill_split = round(bill_tipped / num_split, 2)
+
+# Print the total each person will pay after tip is applied and bill is split.
+print(f"Each person will pay $ {bill_split}")
