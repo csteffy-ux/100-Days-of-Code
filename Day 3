@@ -32,6 +32,7 @@ print("You woke up on a train track! Quick make your first choice!")
 
 # Get user input for the first question.
 direction = input("Would you like to go left or right? Choose 'R' or 'L': ").lower()
+
 # If user chooses correct they move on if not game ends.
 if direction == "l":
     print("Whew! You narrowly missed the train.")
@@ -41,18 +42,19 @@ else:
 
 # Get user input for the second question.
 print("That was a close one indeed. You're at the bank of a river now.")
-# If user chooses correct they move on if not game ends.
 swim = input("Would you like to swim or wait here? ").lower()
+
+# If user chooses correct they move on if not game ends.
 if swim == "swim":
     print("You swam across the water just before the train blew up behind you!")
 else:
     print("The train exploded behind you and you evaporated :(")
     exit()
 
-print("You come to three doors strangely standing in front of you.")
-
 # Get user input for the third question.
+print("You come to three doors strangely standing in front of you.")
 door = input("Which door do you choose? Red, Blue, or Yellow? 'R', 'B', or 'Y': ")
+
 # If user chooses correct they win the treasure.
 if door == "Y":
     print("ARRRGGGHH! You found the treasure!")
